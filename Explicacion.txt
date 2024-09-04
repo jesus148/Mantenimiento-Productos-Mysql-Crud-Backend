@@ -116,3 +116,9 @@ PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npx tsc --w
 
    2. ingresar datos en la tabla producto
      
+
+ 9. git > no subas el folder dist y node_modules
+   omitelos en .gitignore    >
+     
+     node_modules
+     dist/
