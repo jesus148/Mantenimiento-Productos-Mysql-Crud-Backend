@@ -1,0 +1,118 @@
+
+
+
+1:36:20 
+https://www.youtube.com/watch?v=INeJQ_5fwYM&t=753s
+
+
+1.
+  PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npm init -y
+Wrote to C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back\package.json:
+
+{
+  "name": "server_back",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+2. 
+   forma global > 
+PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npm install -g nodemon 
+
+changed 29 packages in 17s
+
+
+3.  forma global > 
+ PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npm install -g typescript
+
+
+
+
+4.  configurando .ts 
+ 
+ inicializando .tsc
+  PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> tsc --init  
+  tsconfig.json --- archivo de configuracion de .ts
+
+  > crea un file .ts 
+  
+  > cmd > pon tsc > crea un .js (lo transpila) pero solo lo hace una vez
+  
+  > PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> nodemon .\index.js 
+  
+  >PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> tsc --init 
+   (esto tambien lo transpila pero es igual al nodemon)
+
+  >     
+  
+  "outDir": "./dist",  /* Specify an output folder for all emitted files. */  ---- descomenta esto
+     ubicacion donde transipilara todo 
+ 
+  
+
+ 
+ 5. 
+      ESTRUCTURA --------------------------- creacion de folders y files
+   > crea un folder src 
+      > controllers   ---logica de los rest
+         product.ts
+      >db              --conexion bd
+        connection.ts 
+      >models         --clase modelos y server(ejecuta todo la logica del proyecto)
+        server.ts  
+      >routes          ---mapea los endpoints
+        product.ts
+    index.ts            --ejecuta el server
+    .env                --variable de entorno
+
+
+    COMANDOS EN GENERAL DEL PROYECTO PARA INICIAR-------------------------
+
+    comandos para nodemon:
+     PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> nodemon .\dist\index.js
+
+     comando para tranpilar de .ts al .js (transpila todo los files y folder .ts a .js en el dist)
+PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npx tsc --watch   
+
+
+
+ 6. 
+    instalando dependencias
+    express : framework de node
+    dotenv : variable de entorno para produccion 
+    cors: separar el front y back en puertos distintos(para usar las 2 )    
+    sequelize : orm para usar la bd relacional , osea no usar directamente la bd si no desde aca mismo el codigo
+    mysql2 : la bd q usaremos
+
+    PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npm i express dotenv cors sequelize mysql2
+
+
+ 7. 
+   instalando mas dependencias de desarollo  , pa trabajar express con .ts
+    PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npm i --save-dev @types/express   
+
+
+     instalando cors de angular 
+   > installar para junta las ruta de front y back y poder trabajr juntos
+   PS C:\Users\jesus\Desktop\JESUS\ANGULAR\angular_1\back_mio\SERVER> npm i --save-dev @types/cors
+    added 1 package, and audited 210 packages in 2s   
+
+
+
+
+8.
+   creacion bd >-----------------------
+   
+   1 . crear una bd > junto con su tabla 
+       ver en > src > db > 1.png
+
+   2. ingresar datos en la tabla producto
+     
