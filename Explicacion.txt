@@ -68,6 +68,7 @@ changed 29 packages in 17s
         connection.ts 
       >models         --clase modelos y server(ejecuta todo la logica del proyecto)
         server.ts  
+        product.ts
       >routes          ---mapea los endpoints
         product.ts
     index.ts            --ejecuta el server
