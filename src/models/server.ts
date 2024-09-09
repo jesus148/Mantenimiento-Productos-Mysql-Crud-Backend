@@ -90,13 +90,14 @@ class Server {
 
 
 
-    // metodo parsea data
+    // metodo parsea data , funciones q se ejecutan ante de algo
     midlewares() {
 
         // Parseamos el body pa retornar al cliente
         this.app.use(express.json());
 
-        //para usar los cors diferencia o usar el front junto con le back
+        //para usar los cors diferencia o usar el front junto con el back
+        // servidor web acepte solicitudes provenientes de otros dominios, puertos o protocolos distintos al del servidor.
         this.app.use(cors());
     }
 

@@ -77,9 +77,11 @@ changed 29 packages in 17s
 
     COMANDOS EN GENERAL DEL PROYECTO PARA INICIAR-------------------------
 
+    segundo esto 2  
     comandos para nodemon:
      PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> nodemon .\dist\index.js
 
+    primero esto 1 
      comando para tranpilar de .ts al .js (transpila todo los files y folder .ts a .js en el dist)
 PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npx tsc --watch   
 
@@ -113,6 +115,7 @@ PS C:\Users\jesus\Desktop\JESUS\ANGULAR\crud_ejercisio2\server_back> npx tsc --w
    creacion bd >-----------------------
    
    1 . crear una bd > junto con su tabla 
+      la bd se llamara > almacen
        ver en > src > db > 1.png
 
    2. ingresar datos en la tabla producto

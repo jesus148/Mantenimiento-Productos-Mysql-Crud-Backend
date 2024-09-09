@@ -16,10 +16,10 @@ export const getProducts = async ( req : Request , res : Response) => {
     const listProduct = await Producto.findAll();
 
     // respondiendo cliente
-    res.json({
+    res.json(
         // mgs:'getProducts'
         listProduct
-    })
+    )
 }
 
 
