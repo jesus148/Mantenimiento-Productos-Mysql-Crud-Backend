@@ -27,6 +27,7 @@ router.get('/:id' , getProduct)
 
 
 // eliminando producto por id
+http://localhost:3000/api/products/5  ----delete
 router.delete('/:id' , deleteProduct)
 
 

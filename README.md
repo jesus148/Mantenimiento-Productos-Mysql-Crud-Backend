@@ -2,4 +2,4 @@
 
 # parte del frontend
 
- https://github.com/jesus148/Mantenimiento-Productos-Mysql-Crud-https://github.com/jesus148/Mantenimiento-Productos-Mysql-Crud-Frontend.git
+https://github.com/jesus148/Mantenimiento-Productos-Mysql-Crud-Frontend?tab=readme-ov-file
